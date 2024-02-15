@@ -1,0 +1,18 @@
+// Importar todo Bootstrap 5
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// Importar fuente de Google
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+// Importar variables locales
+@import './variables.scss';
+
+// Importar mixins
+@import './mixin.scss';
+
+// Importar estilos personalizados del menú
+@import './navbar.scss';
+
+// // Importar estilos personalizados del main-hero
+@import './mainhero.scss';
+

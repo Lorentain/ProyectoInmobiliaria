@@ -1,0 +1,111 @@
+/* IMPORTAR MIXIN */
+@mixin todo { // Reset css
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+@mixin reset-list { // Reset lista
+    list-style: none;
+}
+
+@mixin reset-link { // Reset enlaces
+    text-decoration: none;
+    color: $color-negro;
+}
+
+@mixin padding($paddingY,$paddingX) { // Escoger paddingY, paddingX
+    padding: $paddingY $paddingX;
+}
+
+@mixin Ancho-Alto ($ancho,$alto) {
+    width: $ancho;
+    height: $alto;
+}
+
+@mixin flex-posicionar($justificar:center,$alinear:center,$direccion:row,$espacio:0,$wrap:nowrap) { // Display Flex
+    display: flex;
+    justify-content: $justificar;
+    align-items: $alinear;
+    flex-direction: $direccion;
+    gap: $espacio;
+    flex-wrap: $wrap;
+}
+
+@mixin flex-basic($tamaño,$espaciado) { // Flex basic con espaciado
+    flex-basis: calc($tamaño - $espaciado);
+}
+
+@mixin menu($gap) { // Menú 
+    @include flex-posicionar(center,center,row,$gap,nowrap);
+    @include reset-list();
+    li {
+        font-size: calc(0.7rem + 0.5vw);
+            &:hover {
+                transform: scale(1.2);
+                font-weight: bold;
+                cursor: pointer;
+            }
+        }
+}
+
+@mixin layout-responsive { // Capa responsiva
+    @include flex-posicionar(space-between,center,row,0,wrap);
+                    &__item {
+                        flex-basis: calc(33.33% - 20px); 
+                        height: 10rem;
+                        flex-grow: 1;
+                        flex-shrink: 1;
+                        padding: 15px;
+                        margin: 10px;
+                    }
+}
+
+@mixin boton($ancho,$borde,$color,$fondo,$fs,$fw) { // Boton
+    width: $ancho;
+    border: 2px solid $borde;
+    color: $color;
+    background: $fondo;
+    font-size: $fs;
+    font-weight: $fw;
+}
+
+@mixin querie-basic-768px($nombreContenedor, $tamaño, $espaciado) { // Contenedor con flex-basic y calc (768px)
+    @media screen and (max-width: 768px) {
+      #{$nombreContenedor} {
+        flex-basis: calc(#{$tamaño} - #{$espaciado});
+      }
+    }
+}
+
+@mixin querie-personalizada($tamaño) {
+    @media screen and (max-width: $tamaño) {
+        @content;
+    }
+}
+
+@mixin responsivo($tamaño) { // Responsivo
+    @if $tamaño == "tablet" {
+        @media screen and (max-width: 900px) {
+            @content;
+        }
+    }
+    @if $tamaño == "mobile" {
+        @media screen and (max-width: 520px) {
+            @content;
+        }
+    }
+}
+
+@mixin tablet { // Responsible table
+    @media screen and (max-width: 900px) {
+        @content;
+    }
+}
+@mixin mobile{ // Responsible movil
+    @media screen and (max-width: 520px) {
+        @content;
+    }
+}

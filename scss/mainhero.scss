@@ -1,0 +1,104 @@
+/* ESTILOS - MAIN HERO */
+
+.main-hero {
+    height: 85vh;
+    background-image: url(../assets/fondo-main.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-bottom: 4px solid $color-blanco;
+}   
+
+.container__main {
+    padding: 10rem;
+}
+
+.container__titulo {
+    font-size: calc(3.5rem + 0.5vw);
+    @include responsivo(mobile) {
+        font-size: calc(2.5rem + 1vw);
+    }
+}
+
+.azul {
+    color: $color-secondary;
+}
+
+.container__redes {
+    @include flex-posicionar(center,center,row,2rem,nowrap);
+    margin-top: 1.5rem;
+}
+
+.container__redes img {
+    width: 50px;
+    cursor: pointer;
+}
+
+.container__boton {
+    height: 50px;
+}
+
+.container__boton:hover {
+    box-shadow: 0 0 6px white;
+}
+
+.imagenFondo {
+    @include Ancho-Alto (100%,100%);
+    background-image: url(../assets/fondo-main.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.izquierda {
+    @include flex-posicionar(center,center,column,1rem,nowrap);
+    @include Ancho-Alto(600px,100%);
+
+    padding-right: 30px;
+    background-color: $color-primary;
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+}
+
+.derecha {
+    width: 100%;
+    background: orange;
+}
+
+
+/* SLIDER */
+
+.slider {
+    background: $color-primary;
+}
+
+.slider__titulo {
+    background: $color-blanco;
+    color: $color-negro;
+    padding: 1rem;
+    border-radius: 4px;
+    width: 80%;
+    @include responsivo(mobile) {
+        font-size: calc(1.3rem + 0.5vw);
+    }
+}
+
+.carousel {
+    border: 6px solid $color-primary;
+}
+
+@media (max-width: 992px) {
+    .main-hero {
+        justify-content: center;
+        background-color: $color-primary;
+        background-image: none;
+    }
+
+    .izquierda {
+        padding-right: 0;
+        clip-path: none;
+    }
+
+    .container__boton {
+        width: 10rem !important;
+    }
+}
