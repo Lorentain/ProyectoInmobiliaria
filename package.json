@@ -5,7 +5,9 @@
   "name": "inmobiliariasass",
   "version": "1.0.0",
   "main": "index.js",
-  "devDependencies": {},
+  "devDependencies": {
+    "node-sass": "^9.0.0"
+  },
   "scripts": {
     "watch": "node-sass -o css scss/main.scss -w"
   },

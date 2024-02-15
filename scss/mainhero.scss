@@ -7,6 +7,7 @@
     background-position: center;
     background-size: cover;
     border-bottom: 4px solid $color-blanco;
+    background-color: $color-primary;
 }   
 
 .container__main {
@@ -64,6 +65,40 @@
     background: orange;
 }
 
+/* BANNER */
+
+.banner {
+    height: 500px;
+    @include responsivo(tablet) {
+        height: 100%;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+    }
+}
+
+.contenedor-newsletter {
+    color: $color-blanco;
+    background-color: $color-primary;
+    width: 40rem;
+    height: 20rem;
+    border: 3px solid $color-primary;
+    @include responsivo(tablet) {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.campo_newsletter {
+    height: 3rem;
+    @include responsivo(tablet) {
+        width: 75% !important;
+    }
+}
+
+.banner__container {
+
+}
+
 
 /* SLIDER */
 
@@ -83,32 +118,16 @@
 }
 
 .carousel {
+    width: 70%;
     border: 6px solid $color-primary;
-}
-
-/* BANNER */
-
-.banner {
-    width: 100%;
-    height: 500px;
-}
-
-.contenedor-newsletter {
-    color: $color-blanco;
-    background-color: $color-primary;
-    width: 40rem;
-    height: 20rem;
-    border: 3px solid $color-primary;
-}
-
-.campo_newsletter {
-    height: 3rem;
+    @include responsivo(tablet) {
+        width: 100%;
+    }
 }
 
 @media (max-width: 992px) {
     .main-hero {
         justify-content: center;
-        background-color: $color-primary;
         background-image: none;
     }
 

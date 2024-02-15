@@ -4,20 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inmoboliaria Lorenzo</title>
-
     <link rel="stylesheet" href="./css/main.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
 
+  <!-- INICIO FLECHA-GOTOP -->
+
+  <div id="contenedor-flecha" class="contenedor-flecha">
+    <button id="btn-scrollTop"><i class='bx bx-chevron-up'></i></button>
+  </div>
+
+  <!-- FIN FLECHA-GOTOP -->
+
+    <!-- INICIO HEADER -->
+
     <header>
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container-fluid d-flex align-items-center justify-content-center gap-5">
-          <img src="./assets/logo.png" class="navbar-logo navbar-brand fs-3 text-light">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+      <nav id="navbar" class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid d-flex">
+          <img id="img-logo" src="./assets/logo.png" class="navbar-logo navbar-brand fs-3 text-light">
+          <button id="navbar-toggler" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span id="navbar-toggler-icon" class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-center">
+            <ul id="navbar-nav" class="navbar-nav me-auto mb-2 mb-lg-0 align-items-center">
                 <li class="nav-item">
                     <a class="nav-link text-light fs-4 fw-bold" href="#">Inicio</a>
                 </li>
@@ -27,17 +37,29 @@
                 <li class="nav-item">
                     <a class="nav-link text-light fs-4 fw-bold" href="#">Contacto</a>
                 </li>
+                <li class="nav-item">
+                  <label class="btn-cambiar">
+                    <input id="boton-cambiar" type="checkbox">
+                    <div class="btn-cambiar-fondo">
+                      <div id="btn-cambiar-click" class="btn-cambiar-click"></div>
+                    </div>
+                  </label>
+                </li>
             </ul>
           </div>
         </div>
       </nav>
     </header>
 
-    <main class="main-hero container-fluid d-flex p-0">
-        <div class="izquierda">
-            <h1 class="container__titulo text-light fw-bold mb-0 text-center">INMOBILIARIA <span class="azul fw-bold">LORENZO</span></h1>
-            <h3 class="text-light text-center">Los <span class="azul">inmuebles</span> al mejor precio posible</h3>
-            <button class="container__boton w-25 border-0 rounded">Mirar precios</button>
+    <!-- FIN HEADER -->
+
+    <!-- INICIO MAIN-HERO -->
+
+    <main id="main-hero" class="main-hero container-fluid d-flex p-0">
+        <div id="main-hero__izquierda" class="izquierda">
+            <h1 id="container__titulo" class="container__titulo text-light fw-bold mb-0 text-center">INMOBILIARIA <span class="azul fw-bold">LORENZO</span></h1>
+            <h3 id="container__parrafo" class="text-light text-center">Los <span class="azul">inmuebles</span> al mejor precio posible</h3>
+            <button id="container__boton" class="container__boton w-25 border-0 rounded">Mirar precios</button>
             <div class="container__redes">
               <img src="./assets/instagram.png">
               <img src="./assets/facebook.png">
@@ -46,22 +68,30 @@
         </div>
     </main>
 
-    <section class="banner container-fluid d-flex justify-content-center align-items-center flex-column gap-4">
-        <h1 class="fw-bold">¿Quieres estar atento a las mejores <span class="azul fw-bold">ofertas?</span></h1>
-        <div class="container-fluid d-flex gap-5">
-          <div class="contenedor-newsletter d-flex justify-content-center align-items-center flex-column">
-            <img src="./assets/slider1.jpg" style="width: 100%;height: 100%;">
-        </div>
-        <div class="contenedor-newsletter d-flex justify-content-center align-items-center flex-column">
-            <h3 class="fw-bold fs-1 mb-5">News Letter</h3>
-            <input class="campo_newsletter w-50 rounded-1 p-2 border-0" type="email" placeholder="Introduce tu email">
-            <p class="mt-2 fs-5">¡No te pierdas increíbles ofertas, suscríbete aquí!</p>
-        </div>
+    <!-- FIN MAIN-HERO -->
+
+    <!-- INICIO BANNER -->
+
+    <section class="banner container-fluid d-flex justify-content-center align-items-center flex-column gap-4 w-100">
+        <h1 class="fw-bold text-center">¿Quieres estar atento a las mejores <span class="azul fw-bold">ofertas?</span></h1>
+        <div class="banner__container container-fluid d-flex justify-content-center align-items-center flex-column flex-lg-row gap-5">
+            <div class="contenedor-newsletter d-flex justify-content-center align-items-center flex-column">
+                <img class="w-100 h-100" src="./assets/slider1.jpg">
+            </div>
+            <div id="contenedor-newsletter" class="contenedor-newsletter d-flex justify-content-center align-items-center flex-column">
+                  <h3 id="titulo__newsletter" class="fw-bold fs-1 mb-5">News Letter</h3>
+                  <input id="campo_newsletter" class="campo_newsletter w-75 rounded-1 p-2 border-0" type="email" placeholder="Introduce tu email">
+                  <p id="parrafo__newsletter" class="mt-2 fs-5 text-center">¡No te pierdas increíbles ofertas, suscríbete aquí!</p>
+            </div>
         </div>
     </section>
 
-    <section class="slider d-flex justify-content-center align-items-center flex-column text-center p-5">
-        <h1 class="slider__titulo fw-bold">Categorías de <span class="azul fw-bold">Inmuebles</span></h1>
+    <!-- FIN BANNER -->
+
+    <!-- INICIO SLIDER -->
+
+    <section id="slider" class="slider d-flex justify-content-center align-items-center flex-column text-center p-5">
+        <h1 id="slider__titulo" class="slider__titulo fw-bold">Categorías de <span class="azul fw-bold">Inmuebles</span></h1>
         <div id="carouselExampleIndicators" class="carousel slide mt-5" data-bs-ride="carousel">
           <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -70,15 +100,15 @@
             </div>
             <div class="carousel-inner">
               <div class="carousel-item active position-relative">
-                <img src="./assets/slider1.jpg" class="d-block w-100">
+                <img src="./assets/slider1-1.jpg" class="d-block w-100">
                 <!-- <h3 class="carousel-item__titulo">Lujo</h3> -->
               </div>
               <div class="carousel-item">
-                <img src="./assets/slider2.jpg" class="d-block w-100">
+                <img src="./assets/slider2-1.jpg" class="d-block w-100">
                 <!-- <h3 class="carousel-item__titulo">Lujo</h3> -->
               </div>
               <div class="carousel-item">
-                <img src="./assets/slider3.jpg" class="d-block w-100">
+                <img src="./assets/slider3-1.jpg" class="d-block w-100">
                 <!-- <h3 class="carousel-item__titulo">Lujo</h3> -->
               </div>
             </div>
@@ -92,8 +122,104 @@
             </button>
         </div>
     </section>
-    
+
+    <!-- FIN SLIDER -->
+
+
+  <!-- IMPORTAR BOOTSTRAP -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  
+  <script>
+    // Flecha GoTop
+    const botonScrollTop = document.getElementById("btn-scrollTop")
+    botonScrollTop.addEventListener("click", () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+
+    // Cambiar de modo oscuro-claro
+    document.getElementById('boton-cambiar').addEventListener('change', function() {
+      var contenedorFlecha = document.getElementById('contenedor-flecha');
+      var navbar = document.getElementById('navbar');
+      var navbarNav = document.getElementById('navbar-nav');
+      var navLink = document.getElementsByClassName('nav-link');
+      var navbarToggler = document.getElementById('navbar-toggler');
+      var navbarTogglerIcon = document.getElementById('navbar-toggler-icon');
+      var btnCambiarClick = document.getElementById('btn-cambiar-click');
+      var imgLogo = document.getElementById('img-logo')
+      var mainHero = document.getElementById('main-hero');
+      var mainHeroIzquierda = document.getElementById('main-hero__izquierda')
+      var containerTitulo = document.getElementById('container__titulo');
+      var containerParrafo = document.getElementById('container__parrafo');
+      var containerBoton = document.getElementById('container__boton');
+      var contenedorNewsletter = document.getElementById('contenedor-newsletter');
+      var tituloNewsletter = document.getElementById('titulo__newsletter');
+      var parrafoNewsletter = document.getElementById('parrafo__newsletter');
+      var campoNewsletter = document.getElementById('campo_newsletter');
+      var slider = document.getElementById('slider');
+      var sliderTitulo = document.getElementById('slider__titulo');
+
+      for (var i = 0; i < navLink.length; i++) {
+          if (this.checked) {
+            contenedorFlecha.style.backgroundColor = "white";
+            contenedorFlecha.style.borderColor = "black";
+            navbar.style.backgroundColor = "white";
+            navbarNav.style.backgroundColor = "white";
+            navLink[i].style.setProperty('color', 'black', 'important');
+            navbarToggler.style.borderColor = "black";
+            navbarTogglerIcon.classList.remove("navbar-toggler-icon");
+            navbarTogglerIcon.classList.add("navbar-toggler-icon2");
+            btnCambiarClick.style.backgroundImage = "url('../assets/modo-claro.png')";;
+            imgLogo.src = "./assets/logoDark.png";
+            mainHero.style.borderBottomColor = "black";
+            mainHero.style.backgroundColor = "white";
+            mainHeroIzquierda.style.backgroundColor = "white";
+            containerTitulo.style.setProperty('color', 'black', 'important');
+            containerParrafo.style.setProperty('color', 'black', 'important');
+            containerBoton.style.backgroundColor = "black";
+            containerBoton.style.color = "white";
+            contenedorNewsletter.style.backgroundColor = "white";
+            tituloNewsletter.style.color = "black";
+            parrafoNewsletter.style.color = "black";
+            campoNewsletter.style.backgroundColor = "black";
+            campoNewsletter.style.color = "white";
+            slider.style.backgroundColor = "white";
+            sliderTitulo.style.backgroundColor = "black";
+            sliderTitulo.style.color = "white";
+          } else {
+            contenedorFlecha.style.backgroundColor = "";
+            contenedorFlecha.style.borderColor = "";
+            navbar.style.backgroundColor = ""; 
+            navbarNav.style.backgroundColor = "";
+            navLink[i].style.color = "";
+            navbarToggler.style.borderColor = "";
+            navbarTogglerIcon.classList.remove("navbar-toggler-icon2");
+            navbarTogglerIcon.classList.add("navbar-toggler-icon");
+            navbarTogglerIcon.style.backgroundImage = "";
+            btnCambiarClick.style.backgroundImage = "url('../assets/modo-oscuro.png')";
+            imgLogo.src = "./assets/logo.png";
+            mainHero.style.borderBottomColor = "";
+            mainHero.style.backgroundColor = "";
+            mainHeroIzquierda.style.backgroundColor = "";
+            containerTitulo.style.color = "";
+            containerParrafo.style.color = "";
+            containerBoton.style.backgroundColor = "";
+            containerBoton.style.color = "";
+            contenedorNewsletter.style.backgroundColor = "";
+            tituloNewsletter.style.color = "";
+            parrafoNewsletter.style.color = "";
+            campoNewsletter.style.backgroundColor = "";
+            campoNewsletter.style.color = "";
+            slider.style.backgroundColor = "";
+            sliderTitulo.style.backgroundColor = "";
+            sliderTitulo.style.color = "";
+          }
+      }
+    });
+  </script>
+  
     
 </body>
 </html>
