@@ -146,6 +146,7 @@
       var navbar = document.getElementById('navbar');
       var navbarNav = document.getElementById('navbar-nav');
       var navLink = document.getElementsByClassName('nav-link');
+      var navItem = document.getElementsByClassName('nav-item');
       var navbarToggler = document.getElementById('navbar-toggler');
       var navbarTogglerIcon = document.getElementById('navbar-toggler-icon');
       var btnCambiarClick = document.getElementById('btn-cambiar-click');
@@ -163,12 +164,14 @@
       var sliderTitulo = document.getElementById('slider__titulo');
 
       for (var i = 0; i < navLink.length; i++) {
+        for(var x = 0; x < navItem.length; x++) {
           if (this.checked) {
             contenedorFlecha.style.backgroundColor = "white";
             contenedorFlecha.style.borderColor = "black";
             navbar.style.backgroundColor = "white";
             navbarNav.style.backgroundColor = "white";
             navLink[i].style.setProperty('color', 'black', 'important');
+            navItem[x].style.borderBottomColor = "black";
             navbarToggler.style.borderColor = "black";
             navbarTogglerIcon.classList.remove("navbar-toggler-icon");
             navbarTogglerIcon.classList.add("navbar-toggler-icon2");
@@ -195,6 +198,7 @@
             navbar.style.backgroundColor = ""; 
             navbarNav.style.backgroundColor = "";
             navLink[i].style.color = "";
+            navItem[x].style.borderBottomColor = "";
             navbarToggler.style.borderColor = "";
             navbarTogglerIcon.classList.remove("navbar-toggler-icon2");
             navbarTogglerIcon.classList.add("navbar-toggler-icon");
@@ -217,6 +221,7 @@
             sliderTitulo.style.backgroundColor = "";
             sliderTitulo.style.color = "";
           }
+        }
       }
     });
   </script>
