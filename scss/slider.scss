@@ -1,0 +1,27 @@
+/* SLIDER */
+
+.slider {
+    background: $color-primary;
+    @include responsivo(tablet) {
+        padding: calc(1rem + 0.5vw) !important;
+    }
+}
+
+.slider__titulo {
+    background: $color-blanco;
+    color: $color-negro;
+    padding: 1rem;
+    border-radius: 4px;
+    width: 80%;
+    @include responsivo(mobile) {
+        font-size: calc(1.3rem + 0.5vw);
+    }
+}
+
+.carousel {
+    width: 70%;
+    border: 6px solid $color-primary;
+    @include responsivo(tablet) {
+        width: 100%;
+    }
+}

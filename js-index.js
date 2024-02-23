@@ -31,9 +31,12 @@ document.getElementById('boton-cambiar').addEventListener('change', function() {
   var slider = document.getElementById('slider');
   var sliderTitulo = document.getElementById('slider__titulo');
   var footer = document.getElementById('footer');
+  var footerTexto = document.getElementsByClassName('footer-texto');
+  var imgLogoFooter = document.getElementById('img-logo-footer');
 
   for (var i = 0; i < navLink.length; i++) {
     for(var x = 0; x < navItem.length; x++) {
+      for(var z = 0; z < footerTexto.length;z++) {
       if (this.checked) {
         contenedorFlecha.style.backgroundColor = "white";
         contenedorFlecha.style.borderColor = "black";
@@ -63,6 +66,8 @@ document.getElementById('boton-cambiar').addEventListener('change', function() {
         sliderTitulo.style.backgroundColor = "black";
         sliderTitulo.style.color = "white";
         footer.style.backgroundColor = "white";
+        footerTexto[z].style.setProperty('color','black','important');
+        imgLogoFooter.src = "./assets/logoDark.png";
       } else {
         contenedorFlecha.style.backgroundColor = "";
         contenedorFlecha.style.borderColor = "";
@@ -93,6 +98,9 @@ document.getElementById('boton-cambiar').addEventListener('change', function() {
         sliderTitulo.style.backgroundColor = "";
         sliderTitulo.style.color = "";
         footer.style.backgroundColor = "";
+        footerTexto[z].style.color = "";
+        imgLogoFooter.src = "./assets/logo.png";
+      }
       }
     }
   }

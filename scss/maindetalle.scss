@@ -1,0 +1,45 @@
+.container-detalle {
+    @include querie-personalizada(1070px) {
+        @include flex-posicionar(center,center,column,0,nowrap);
+    }
+}
+
+.container-detalle__img{
+    width: 70%;
+    height: 100%;
+    @include querie-personalizada(1070px) {
+        width: 100%;
+    }
+}
+
+.container-detalle__caracteristicas {
+    width: 30%;
+    height: 100%;
+    border: 4px solid $color-primary;
+    @include querie-personalizada(1070px) {
+        width: 100%;
+    }
+}
+
+.detalle-texto {
+    font-size: calc(1rem + 0.5vw) !important;
+    @include querie-personalizada(1070px) {
+        font-size: calc(2rem + 0.5vw) !important;
+    }
+    @include responsivo(mobile) {
+        font-size: calc(1.5rem + 0.5vw) !important;
+    }
+}
+
+.detalle-logo {
+    width: calc(8rem + 1vw) ;
+}
+
+.container-detalle__titulo {
+    @include querie-personalizada(1070px) {
+        font-size: calc(2.5rem + 1vw) !important;
+    }
+    @include responsivo(mobile) {
+        font-size: calc(1.5rem + 0.5vw) !important;
+    }
+}

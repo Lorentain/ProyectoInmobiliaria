@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inmoboliaria Lorenzo</title>
-    <link rel="shortcut icon" href="./assets/logo.png">
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/main.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
@@ -21,13 +21,13 @@
     <!-- INICIO HEADER -->
 
     <header>
-        <nav id="navbar" class="navbar navbar-expand-lg navbar-light">
+      <nav id="navbar" class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid d-flex">
-            <img id="img-logo" src="./assets/logo.png" class="navbar-logo navbar-brand fs-3 text-light">
-            <button id="navbar-toggler" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <img id="img-logo" src="./assets/logo.png" class="navbar-logo navbar-brand fs-3 text-light">
+          <button id="navbar-toggler" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span id="navbar-toggler-icon" class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul id="navbar-nav" class="navbar-nav me-auto mb-2 mb-lg-0 align-items-center">
                 <li class="nav-item">
                     <a class="nav-link text-light fs-4 fw-bold" href="./index.html">Inicio</a>
@@ -39,20 +39,127 @@
                     <a class="nav-link text-light fs-4 fw-bold" href="#">Contacto</a>
                 </li>
                 <li class="nav-item">
-                    <label class="btn-cambiar">
+                  <label class="btn-cambiar">
                     <input id="boton-cambiar" type="checkbox">
                     <div class="btn-cambiar-fondo">
-                        <div id="btn-cambiar-click" class="btn-cambiar-click"></div>
+                      <div id="btn-cambiar-click" class="btn-cambiar-click"></div>
                     </div>
-                    </label>
+                  </label>
                 </li>
             </ul>
-            </div>
+          </div>
         </div>
-        </nav>
+      </nav>
     </header>
 
     <!-- FIN HEADER -->
+
+    <!-- INICIO MAIN PRECIOS -->
+
+    <main class="main-precios container-fluid mt-5 mb-5">
+      <h1 class="text-center fw-bold mb-4"><span class="azul fw-bold">Precios</span> de Inmuebles</h1>
+      <div class="row row-cols-1 row-cols-md-3 g-4 d-flex justify-content-center">
+        <div class="inmueble col">
+          <div class="card h-100 d-flex justify-content-center align-items-center">
+            <a href="./detalle.html"><img src="./assets/inmueble1.jpg" class="card-img-top inmuebles__img"></a>
+            <div class="inmueble__cardtext card-body">
+              <h5 class="card-title"><b>Casa en Ibiza con piscina</b></h5>
+              <p class="card-text">Casa situada en el centro de Ibiza, tiene un gran piscina con un diseño muy moderno. 
+                El diseño es lo más minimalista y moderno del mercado.</p>
+            </div>
+            <div class="card-footer inmueble__cardfooter d-flex flex-column justify-content-center align-items-center">
+              <p class="text-center fs-2 fw-bold">1.300.000€</p>
+              <a href="./detalle.html"><button class="boton-precio btn btn-primary fw-bold p-2 fs-5">Ver Detalles</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="inmueble col">
+          <div class="card h-100 d-flex justify-content-center align-items-center">
+            <a href="./detalle.html"><img src="./assets/inmueble2.jpg" class="card-img-top inmuebles__img"></a>
+            <div class="inmueble__cardtext card-body">
+              <h5 class="card-title"><b>Castillo en Madrid</b></h5>
+              <p class="card-text">Un gigante Castillo ubicado a las afueras de Madrid con un gran terreno disponible. 
+                La mejor opción si quieres completa tranquilidad.</p>
+            </div>
+            <div class="card-footer inmueble__cardfooter d-flex flex-column justify-content-center align-items-center">
+              <p class="text-center fs-2 fw-bold">10.000.000€</p>
+              <a href="./detalle.html"><button class="boton-precio btn btn-primary fw-bold p-2 fs-5">Ver Detalles</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row row-cols-1 row-cols-md-3 g-4 d-flex justify-content-center">
+        <div class="inmueble col">
+          <div class="card h-100 d-flex justify-content-center align-items-center">
+            <a href="./detalle.html"><img src="./assets/inmueble3.jpg" class="card-img-top inmuebles__img"></a>
+            <div class="inmueble__cardtext card-body">
+              <h5 class="card-title"><b>Casa rural en Burgos</b></h5>
+              <p class="card-text">Una casa rural en un entorno natural, con buena vegetación y con bonitas vistas. 
+                Si eres una persona que le gusta la naturaleza, te va a encantar.</p>
+            </div>
+            <div class="card-footer inmueble__cardfooter d-flex flex-column justify-content-center align-items-center">
+              <p class="text-center fs-2 fw-bold">780.000€</p>
+              <a href="./detalle.html"><button class="boton-precio btn btn-primary fw-bold p-2 fs-5">Ver Detalles</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="inmueble col">
+          <div class="card h-100 d-flex justify-content-center align-items-center">
+            <a href="./detalle.html"><img src="./assets/inmueble4.jpg" class="card-img-top inmuebles__img"></a>
+            <div class="inmueble__cardtext card-body">
+              <h5 class="card-title"><b>Edificio moderno en Málaga</b></h5>
+              <p class="card-text">Una de las casas más modenas que podrás encontrar, hecho por uno de los mejores arquitectos de España.
+                El ático tiene unas vistas increíbles.
+              </p>
+            </div>
+            <div class="card-footer inmueble__cardfooter d-flex flex-column justify-content-center align-items-center">
+              <p class="text-center fs-2 fw-bold">680.000€</p>
+              <a href="./detalle.html"><button class="boton-precio btn btn-primary fw-bold p-2 fs-5">Ver Detalles</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- FIN MAIN PRECIOS -->
+
+    <!-- INICIO FOOTER -->
+
+    <footer id="footer" class="container-fluid d-flex justify-content-evenly p-4">
+      <div class="footer__precios">
+        <h3 class="footer-texto text-light">Precios</h3>
+        <p class="footer-texto text-light">Ver precios</p>
+        <p class="footer-texto text-light">Ofertas</p>
+        <p class="footer-texto text-light">Consultar presupuestos</p>
+      </div>
+
+      <div class="footer__contacto">
+        <h3 class="footer-texto text-light">Contacto</h3>
+        <p class="footer-texto text-light">Contactar al correo</p>
+        <p class="footer-texto text-light">Contactar al teléfono</p>
+        <p class="footer-texto text-light">Trabajar con nosotros</p>
+      </div>
+
+      <div class="footer__ayuda">
+        <h3 class="footer-texto text-light">Ayuda</h3>
+        <p class="footer-texto text-light">Política de privacidad</p>
+        <p class="footer-texto text-light">Política de cookies</p>
+        <p class="footer-texto text-light">Atención al cliente</p>
+      </div>
+
+      <div class="footer__redes">
+        <h3 class="footer-texto text-light">Redes Sociales</h3>
+        <div class="contenedor-redes">
+          <img src="./assets/instagram.png">
+          <img src="./assets/facebook.png">
+          <img src="./assets/twitter.png">
+        </div>
+        <img id="img-logo-footer" src="./assets/logo.png">
+      </div>
+    </footer>
+  
+      <!-- FIN FOOTER -->
     
 
   <!-- IMPORTAR BOOTSTRAP -->

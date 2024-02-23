@@ -1,0 +1,29 @@
+/* BANNER */
+
+.banner {
+    height: 500px;
+    @include responsivo(tablet) {
+        height: 100%;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+    }
+}
+
+.contenedor-newsletter {
+    color: $color-blanco;
+    background-color: $color-primary;
+    width: 40rem;
+    height: 20rem;
+    border: 3px solid $color-primary;
+    @include responsivo(tablet) {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.campo_newsletter {
+    height: 3rem;
+    @include responsivo(tablet) {
+        width: 75% !important;
+    }
+}

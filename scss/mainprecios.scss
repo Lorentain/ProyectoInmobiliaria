@@ -1,0 +1,29 @@
+/* MAIN PRECIOS */
+
+.main-precios {
+    @include flex-posicionar(center,center,column,2rem,nowrap);
+}
+
+.inmueble {
+    width: 45% !important;
+}
+
+.inmuebles__img {
+    width: 100% !important;
+}
+
+.inmueble__cardtext h5 {
+    font-size: $fs-xs;
+}
+
+.inmueble__cardtext p {
+    font-size: $fs-xxs;
+}
+
+.inmueble__cardfooter button {
+    background-color: $color-primary !important;
+}
+
+.boton-precio {
+    font-size: calc(1.2rem + 0.5vw) !important;
+}

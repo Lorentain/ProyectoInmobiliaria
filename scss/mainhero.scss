@@ -8,6 +8,10 @@
     background-size: cover;
     border-bottom: 4px solid $color-blanco;
     background-color: $color-primary;
+    @include responsivo(tablet) {
+        justify-content: center;
+        background-image: none;
+    }
 }   
 
 .container__main {
@@ -37,6 +41,9 @@
 
 .container__boton {
     height: 50px;
+    @include responsivo(tablet) {
+        width: 10rem !important;
+    }
 }
 
 .container__boton:hover {
@@ -58,113 +65,13 @@
     padding-right: 30px;
     background-color: $color-primary;
     clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+    @include responsivo(tablet){
+        padding-right: 0;
+        clip-path: none;
+    }
 }
 
 .derecha {
     width: 100%;
     background: orange;
-}
-
-/* BANNER */
-
-.banner {
-    height: 500px;
-    @include responsivo(tablet) {
-        height: 100%;
-        margin-bottom: 1rem;
-        margin-top: 1rem;
-    }
-}
-
-.contenedor-newsletter {
-    color: $color-blanco;
-    background-color: $color-primary;
-    width: 40rem;
-    height: 20rem;
-    border: 3px solid $color-primary;
-    @include responsivo(tablet) {
-        width: 100%;
-        height: 100%;
-    }
-}
-
-.campo_newsletter {
-    height: 3rem;
-    @include responsivo(tablet) {
-        width: 75% !important;
-    }
-}
-
-
-/* SLIDER */
-
-.slider {
-    background: $color-primary;
-    @include responsivo(tablet) {
-        padding: calc(1rem + 0.5vw) !important;
-    }
-}
-
-.slider__titulo {
-    background: $color-blanco;
-    color: $color-negro;
-    padding: 1rem;
-    border-radius: 4px;
-    width: 80%;
-    @include responsivo(mobile) {
-        font-size: calc(1.3rem + 0.5vw);
-    }
-}
-
-.carousel {
-    width: 70%;
-    border: 6px solid $color-primary;
-    @include responsivo(tablet) {
-        width: 100%;
-    }
-}
-
-/* VALORACIONES */
-
-.row {
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-    @include querie-personalizada(750px) {
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
-.row-cols-md-3 > * {
-    width: 30%;
-    @include querie-personalizada(750px) {
-        width: 60%;
-    }
-}
-
-.card-img-top {
-    width: 60% !important;
-}
-
-.card-footer {
-    background-color: white !important;
-}
-
-
-/* MEDIA QUERIES */
-
-@media (max-width: 992px) {
-    .main-hero {
-        justify-content: center;
-        background-image: none;
-    }
-
-    .izquierda {
-        padding-right: 0;
-        clip-path: none;
-    }
-
-    .container__boton {
-        width: 10rem !important;
-    }
 }

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inmoboliaria Lorenzo</title>
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/main.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <!-- INICIO FLECHA-GOTOP -->
+
+    <div id="contenedor-flecha" class="contenedor-flecha">
+    <button id="btn-scrollTop"><i id="bx" class='bx bx-chevron-up'></i></button>
+    </div> 
+
+    <!-- FIN FLECHA-GOTOP -->
+
+    <!-- INICIO HEADER -->
+
+    <header>
+        <nav id="navbar" class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid d-flex">
+            <img id="img-logo" src="./assets/logo.png" class="navbar-logo navbar-brand fs-3 text-light">
+            <button id="navbar-toggler" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span id="navbar-toggler-icon" class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul id="navbar-nav" class="navbar-nav me-auto mb-2 mb-lg-0 align-items-center">
+                <li class="nav-item">
+                    <a class="nav-link text-light fs-4 fw-bold" href="./index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light fs-4 fw-bold" href="./precios.html">Precios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light fs-4 fw-bold" href="#">Contacto</a>
+                </li>
+                <li class="nav-item">
+                    <label class="btn-cambiar">
+                    <input id="boton-cambiar" type="checkbox">
+                    <div class="btn-cambiar-fondo">
+                        <div id="btn-cambiar-click" class="btn-cambiar-click"></div>
+                    </div>
+                    </label>
+                </li>
+            </ul>
+            </div>
+        </div>
+        </nav>
+    </header>
+
+    <!-- FIN HEADER -->
+
+    <!-- INICIO MAIN DETALLE -->
+
+    <main class="main-detalle container-fluid mt-5 mb-5">
+      <h1 class="text-center fw-bold mb-4">Detalles de <span class="azul fw-bold">"Casa en Ibiza"</span></h1>
+      <div class="container-detalle d-flex align-items-center gap-3">
+        <div class="container-detalle__img">
+          <img class="w-100 h-100" src="./assets/inmueble1.jpg">
+        </div>
+        <div class="container-detalle__caracteristicas d-flex flex-column">
+            <h3 class="container-detalle__titulo fw-bold text-center fs-2">Características</h3>
+            <div>
+              <div class="d-flex flex-column p-3">
+                <div class="d-flex align-items-center justify-content-center gap-3">
+                  <p class="detalle-texto fs-3 text-center">5 Habitaciones</p>
+                  <img class="detalle-logo" src="./assets/cama.svg">
+                </div>
+                <div class="d-flex align-items-center justify-content-center gap-3">
+                  <p class="detalle-texto fs-3 text-center">2 Baños</p>
+                  <img class="detalle-logo" src="./assets/ducha.svg">
+                </div>
+                <div class="d-flex align-items-center justify-content-center gap-3">
+                  <p class="detalle-texto fs-3 text-center">1 Piscina</p>
+                  <img class="detalle-logo" src="./assets/piscina.svg">
+                </div>
+                <div class="d-flex align-items-center justify-content-center gap-3">
+                  <p class="detalle-texto fs-3 text-center">1 Barbacoa</p>
+                  <img class="detalle-logo" src="./assets/barbacoa.svg">
+                </div>
+              </div>
+                <div class="p-3">
+                  <h3>Descripción:</h3>
+                  <p class="fs-5">Casa de lujo, con un terreno increiblemente grande con un diseño muy actual y minimalista.</p>
+                  <p class="fs-5">Tiene un precio genial, incluyendo muchas habitaciones y un par de baños, todo lo necesario para vivar lo más
+                    comodamente posible.
+                  </p>
+                </div>
+            </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- FIN MAIN DETALLE -->
+
+    <!-- INICIO FOOTER -->
+
+    <footer id="footer" class="container-fluid d-flex justify-content-evenly p-4">
+      <div class="footer__precios">
+        <h3 class="footer-texto text-light">Precios</h3>
+        <p class="footer-texto text-light">Ver precios</p>
+        <p class="footer-texto text-light">Ofertas</p>
+        <p class="footer-texto text-light">Consultar presupuestos</p>
+      </div>
+
+      <div class="footer__contacto">
+        <h3 class="footer-texto text-light">Contacto</h3>
+        <p class="footer-texto text-light">Contactar al correo</p>
+        <p class="footer-texto text-light">Contactar al teléfono</p>
+        <p class="footer-texto text-light">Trabajar con nosotros</p>
+      </div>
+
+      <div class="footer__ayuda">
+        <h3 class="footer-texto text-light">Ayuda</h3>
+        <p class="footer-texto text-light">Política de privacidad</p>
+        <p class="footer-texto text-light">Política de cookies</p>
+        <p class="footer-texto text-light">Atención al cliente</p>
+      </div>
+
+      <div class="footer__redes">
+        <h3 class="footer-texto text-light">Redes Sociales</h3>
+        <div class="contenedor-redes">
+          <img src="./assets/instagram.png">
+          <img src="./assets/facebook.png">
+          <img src="./assets/twitter.png">
+        </div>
+        <img id="img-logo-footer" src="./assets/logo.png">
+      </div>
+    </footer>
+  
+      <!-- FIN FOOTER -->
+    
+
+  <!-- IMPORTAR BOOTSTRAP -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- IMPORTAR JAVASCRIPT -->
+    <script src="./js-detalle.js"></script>
+
+</body>
+</html>
