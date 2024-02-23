@@ -13,8 +13,8 @@
   <!-- INICIO FLECHA-GOTOP -->
 
   <div id="contenedor-flecha" class="contenedor-flecha">
-    <button id="btn-scrollTop"><i class='bx bx-chevron-up'></i></button>
-  </div>
+    <button id="btn-scrollTop"><i id="bx" class='bx bx-chevron-up'></i></button>
+  </div> 
 
   <!-- FIN FLECHA-GOTOP -->
 
@@ -30,10 +30,10 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul id="navbar-nav" class="navbar-nav me-auto mb-2 mb-lg-0 align-items-center">
                 <li class="nav-item">
-                    <a class="nav-link text-light fs-4 fw-bold" href="#">Inicio</a>
+                    <a class="nav-link text-light fs-4 fw-bold" href="./index.html">Inicio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-light fs-4 fw-bold" href="#">Inmueble</a>
+                    <a class="nav-link text-light fs-4 fw-bold" href="./precios.html">Precios</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-light fs-4 fw-bold" href="#">Contacto</a>
@@ -60,7 +60,7 @@
         <div id="main-hero__izquierda" class="izquierda">
             <h1 id="container__titulo" class="container__titulo text-light fw-bold mb-0 text-center">INMOBILIARIA <span class="azul fw-bold">LORENZO</span></h1>
             <h3 id="container__parrafo" class="text-light text-center">Los <span class="azul">inmuebles</span> al mejor precio posible</h3>
-            <button id="container__boton" class="container__boton w-25 border-0 rounded">Mirar precios</button>
+            <button id="container__boton" class="container__boton w-25 border-0 rounded fw-bold">Mirar precios</button>
             <div class="container__redes">
               <img src="./assets/instagram.png">
               <img src="./assets/facebook.png">
@@ -77,7 +77,7 @@
         <h1 class="fw-bold text-center">¿Quieres estar atento a las mejores <span class="azul fw-bold">ofertas?</span></h1>
         <div class="banner__container container-fluid d-flex justify-content-center align-items-center flex-column flex-lg-row gap-5">
             <div class="contenedor-newsletter d-flex justify-content-center align-items-center flex-column">
-                <img class="w-100 h-100" src="./assets/slider1.jpg">
+                <img class="w-100 h-100" src="./assets/slider1-1.jpg">
             </div>
             <div id="contenedor-newsletter" class="contenedor-newsletter d-flex justify-content-center align-items-center flex-column">
                   <h3 id="titulo__newsletter" class="fw-bold fs-1 mb-5">News Letter</h3>
@@ -126,105 +126,97 @@
 
     <!-- FIN SLIDER -->
 
+    <!-- INICIO VALORACIONES --> 
+
+    <section class="contenedor_total_cards mt-5 mb-5">
+      <h1 class="text-center fw-bold mb-3"><span class="azul fw-bold">Valoraciones</span> de Clientes</h1>
+
+        <div class="row row-cols-1 row-cols-md-3 g-4 d-flex justify-content-center">
+          <div class="col">
+            <div class="card h-100 d-flex justify-content-center align-items-center">
+              <img src="./assets/valoracion3.jpg" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title"><b>Manolo Lama</b></h5>
+                <p class="card-text">Età empresa età 100% recomedada, tiene precios de baà calidà y los mejores inmuebles.</p>
+              </div>
+              <div class="card-footer">
+                <img class="w-100 h-100" src="./assets/conjuntoEstrellas3.png">
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 d-flex justify-content-center align-items-center">
+              <img src="./assets/valoracion2.png" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title"><b>Esther Expositor</b></h5>
+                <p class="card-text">Gracias a "Inmoboliaria Lorenzo" pude encontrar la casa de mis sueños. Ahora tengo un expositor gigante, es lo mejor.</p>
+              </div>
+              <div class="card-footer">
+                <img class="w-100 h-100" src="./assets/conjuntoEstrellas2.png">
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 d-flex justify-content-center align-items-center">
+              <img src="./assets/valoracion1.png" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title"><b>Maria Virginia de la Concepción</b></h5>
+                <p class="card-text">Los mejores inmuebles del mercado, gracias a dios que confie en esta empresa. 
+                  Ahora puedo sacar el trono por la casa, de tanto espacio que tengo.</p>
+              </div>
+              <div class="card-footer">
+                <img class="w-100 h-100" src="./assets/conjuntoEstrellas.png">
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!-- FIN VALORACIONES -->
+
+    <!-- INICIO FOOTER -->
+
+    <footer id="footer" class="container-fluid d-flex justify-content-evenly p-4">
+      <div class="footer__precios">
+        <h3 class="text-light">Precios</h3>
+        <p class="text-light">Ver precios</p>
+        <p class="text-light">Ofertas</p>
+        <p class="text-light">Consultar presupuestos</p>
+      </div>
+
+      <div class="footer__contacto">
+        <h3 class="text-light">Contacto</h3>
+        <p class="text-light">Contactar al correo</p>
+        <p class="text-light">Contactar al teléfono</p>
+        <p class="text-light">Trabajar con nosotros</p>
+      </div>
+
+      <div class="footer__ayuda">
+        <h3 class="text-light">Ayuda</h3>
+        <p class="text-light">Política de privacidad</p>
+        <p class="text-light">Política de cookies</p>
+        <p class="text-light">Atención al cliente</p>
+      </div>
+
+      <div class="footer__redes">
+        <h3 class="text-light">Redes Sociales</h3>
+        <div class="contenedor-redes">
+          <img src="./assets/instagram.png">
+          <img src="./assets/facebook.png">
+          <img src="./assets/twitter.png">
+        </div>
+        <img src="./assets/logo.png">
+      </div>
+    </footer>
+
+    <!-- FIN FOOTER -->
+
 
   <!-- IMPORTAR BOOTSTRAP -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   
-  <script>
-    // Flecha GoTop
-    const botonScrollTop = document.getElementById("btn-scrollTop")
-    botonScrollTop.addEventListener("click", () => {
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth"
-        });
-    });
-
-    // Cambiar de modo oscuro-claro
-    document.getElementById('boton-cambiar').addEventListener('change', function() {
-      var contenedorFlecha = document.getElementById('contenedor-flecha');
-      var navbar = document.getElementById('navbar');
-      var navbarNav = document.getElementById('navbar-nav');
-      var navLink = document.getElementsByClassName('nav-link');
-      var navItem = document.getElementsByClassName('nav-item');
-      var navbarToggler = document.getElementById('navbar-toggler');
-      var navbarTogglerIcon = document.getElementById('navbar-toggler-icon');
-      var btnCambiarClick = document.getElementById('btn-cambiar-click');
-      var imgLogo = document.getElementById('img-logo')
-      var mainHero = document.getElementById('main-hero');
-      var mainHeroIzquierda = document.getElementById('main-hero__izquierda')
-      var containerTitulo = document.getElementById('container__titulo');
-      var containerParrafo = document.getElementById('container__parrafo');
-      var containerBoton = document.getElementById('container__boton');
-      var contenedorNewsletter = document.getElementById('contenedor-newsletter');
-      var tituloNewsletter = document.getElementById('titulo__newsletter');
-      var parrafoNewsletter = document.getElementById('parrafo__newsletter');
-      var campoNewsletter = document.getElementById('campo_newsletter');
-      var slider = document.getElementById('slider');
-      var sliderTitulo = document.getElementById('slider__titulo');
-
-      for (var i = 0; i < navLink.length; i++) {
-        for(var x = 0; x < navItem.length; x++) {
-          if (this.checked) {
-            contenedorFlecha.style.backgroundColor = "white";
-            contenedorFlecha.style.borderColor = "black";
-            navbar.style.backgroundColor = "white";
-            navbarNav.style.backgroundColor = "white";
-            navLink[i].style.setProperty('color', 'black', 'important');
-            navItem[x].style.borderBottomColor = "black";
-            navbarToggler.style.borderColor = "black";
-            navbarTogglerIcon.classList.remove("navbar-toggler-icon");
-            navbarTogglerIcon.classList.add("navbar-toggler-icon2");
-            btnCambiarClick.style.backgroundImage = "url('./assets/modo-claro.png')";
-            imgLogo.src = "./assets/logoDark.png";
-            mainHero.style.borderBottomColor = "black";
-            mainHero.style.backgroundColor = "white";
-            mainHeroIzquierda.style.backgroundColor = "white";
-            containerTitulo.style.setProperty('color', 'black', 'important');
-            containerParrafo.style.setProperty('color', 'black', 'important');
-            containerBoton.style.backgroundColor = "black";
-            containerBoton.style.color = "white";
-            contenedorNewsletter.style.backgroundColor = "white";
-            tituloNewsletter.style.color = "black";
-            parrafoNewsletter.style.color = "black";
-            campoNewsletter.style.backgroundColor = "black";
-            campoNewsletter.style.color = "white";
-            slider.style.backgroundColor = "white";
-            sliderTitulo.style.backgroundColor = "black";
-            sliderTitulo.style.color = "white";
-          } else {
-            contenedorFlecha.style.backgroundColor = "";
-            contenedorFlecha.style.borderColor = "";
-            navbar.style.backgroundColor = ""; 
-            navbarNav.style.backgroundColor = "";
-            navLink[i].style.color = "";
-            navItem[x].style.borderBottomColor = "";
-            navbarToggler.style.borderColor = "";
-            navbarTogglerIcon.classList.remove("navbar-toggler-icon2");
-            navbarTogglerIcon.classList.add("navbar-toggler-icon");
-            navbarTogglerIcon.style.backgroundImage = "";
-            btnCambiarClick.style.backgroundImage = "url('./assets/modo-oscuro.png')";
-            imgLogo.src = "./assets/logo.png";
-            mainHero.style.borderBottomColor = "";
-            mainHero.style.backgroundColor = "";
-            mainHeroIzquierda.style.backgroundColor = "";
-            containerTitulo.style.color = "";
-            containerParrafo.style.color = "";
-            containerBoton.style.backgroundColor = "";
-            containerBoton.style.color = "";
-            contenedorNewsletter.style.backgroundColor = "";
-            tituloNewsletter.style.color = "";
-            parrafoNewsletter.style.color = "";
-            campoNewsletter.style.backgroundColor = "";
-            campoNewsletter.style.color = "";
-            slider.style.backgroundColor = "";
-            sliderTitulo.style.backgroundColor = "";
-            sliderTitulo.style.color = "";
-          }
-        }
-      }
-    });
-  </script>
+  <!-- IMPORTAR JAVASCRIPT -->
+  <script src="./js-index.js"></script>
   
     
 </body>

@@ -1,0 +1,36 @@
+/* ESTILOS - FOOTER */
+
+footer {
+    background-color: $color-primary;
+    height: 12rem;
+    width: 100%;
+    @include querie-personalizada(750px) {
+        height: 100%;
+        @include flex-posicionar(center,center,column,1.5rem,nowrap);
+        text-align: center;
+    }
+}
+
+.footer__redes {
+    @include flex-posicionar(flex-start,center,column,0,nowrap)
+}
+
+.footer__redes img {
+    width: 75px;
+    cursor: pointer;
+}
+
+.footer__precios p, .footer__contacto p, .footer__ayuda p, .footer__redes p {
+    cursor: pointer;
+}
+
+.contenedor-redes {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.contenedor-redes img {
+    width: 40px;
+    cursor: pointer;
+}

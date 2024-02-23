@@ -1,3 +1,5 @@
+/* ESTILOS - TODO */
+
 * {
     @include reset-list();
     font-family: $font-primary;
@@ -7,6 +9,40 @@
 
 a {
     @include reset-link();
+}
+
+/* ESTILOS - FLECHA INICIO */
+
+.contenedor-flecha {
+    position: fixed;
+    bottom: 20px;
+    right: 25px;
+    width: 50px;
+    height: 50px;
+    z-index: 1000;
+    background-color: $color-primary;
+    border-radius: 50%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: 2px solid $color-blanco;
+}
+
+.contenedor-flecha:hover {
+    transform: translateY(-5px);
+}
+
+#btn-scrollTop {
+    background: transparent;
+    border: none;
+}
+
+.bx-chevron-up {
+    font-size: 50px;
+    color: $color-blanco;
+    border: 2px solid var(--negro);
+    border-radius: 50%;
 }
 
 .navbar {
@@ -109,40 +145,6 @@ a {
 .btn-cambiar input[type="checkbox"]:checked +
 .btn-cambiar-fondo .btn-cambiar-click {
     transform: translateX(40px);
-}
-
-/* ESTILOS - FLECHA INICIO */
-
-.contenedor-flecha {
-    position: fixed;
-    bottom: 20px;
-    right: 25px;
-    width: 50px;
-    height: 50px;
-    z-index: 1000;
-    background-color: $color-secondary;
-    border-radius: 50%; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    border: 2px solid $color-blanco;
-}
-
-.contenedor-flecha:hover {
-    transform: translateY(-5px);
-}
-
-#btn-scrollTop {
-    background: transparent;
-    border: none;
-}
-
-.bx-chevron-up {
-    font-size: 50px;
-    color: $color-primary;
-    border: 2px solid var(--negro);
-    border-radius: 50%;
 }
 
 @media (max-width: 992px) {
